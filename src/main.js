@@ -10,6 +10,9 @@ import 'vue-material/dist/theme/default.css';
 import feather from 'vue-icon';
 import VueResource from 'vue-resource';
 import * as mdbvue from "mdbvue";
+import AtComponents from "at-ui";
+import "at-ui-style";
+Vue.use(AtComponents);
 for (const component in mdbvue) {
   Vue.component(component, mdbvue[component])
 }

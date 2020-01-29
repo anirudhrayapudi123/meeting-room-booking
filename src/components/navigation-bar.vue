@@ -1,12 +1,12 @@
 <template>
-    <!-- <div id="navigation-bar">
+    <div id="navigation-bar">
         <md-tabs md-sync-route md-alignment="fixed" >
       <md-tab id="tab-home" class="nav" md-label="Create" to="/create" ></md-tab>
       <md-tab id="tab-pages" class="nav" md-label="My meetings" to="/mymeetings"> </md-tab>
         </md-tabs>
         </div>
-     -->
-    <mdb-navbar color="blue" dark>
+    
+    <!-- <mdb-navbar color="blue" dark>
     <mdb-navbar-toggler>
       <mdb-navbar-nav>
         <mdb-nav-item class="item" v-on:click="create()">Create</mdb-nav-item>
@@ -14,15 +14,15 @@
       </mdb-navbar-nav>
       <mdb-nav-item class="item user">{{user}}<AccountCircleIcon class="icon"/></mdb-nav-item>
     </mdb-navbar-toggler>
-  </mdb-navbar>
+  </mdb-navbar> -->
 </template>
 <script>
-import AccountCircleIcon from "vue-material-design-icons/AccountCircle.vue";
+// import AccountCircleIcon from "vue-material-design-icons/AccountCircle.vue";
 
 export default {
     name:"navigation-bar",
     components:{
-       AccountCircleIcon
+    //    AccountCircleIcon
     },
    data:()=>({
         user:"User"

@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import login from "../components/login.vue";
 import create from "../components/create.vue";
-import home from "../views/home.vue";
+import home from "../views/Home.vue";
 import mymeetings from "../components/Mymeetings.vue";
 import bookedslots from "../components/booked-slots.vue";
 import bookMeeting from "../components/bookMeeting.vue";

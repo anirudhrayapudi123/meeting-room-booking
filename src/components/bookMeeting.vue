@@ -1,22 +1,18 @@
 <template>
   <div>
     <navigationbar />
-    <form class="formComponent">
-      <div id="label">
+    <form class="formComponent">  
+      <div id="label_startTime">
         <label>Start Time</label>
       </div>
       <div class="subject">
-        <md-field>
           <Datetimepicker class="wide" v-model="startTime"></Datetimepicker>
-        </md-field>
       </div>
-      <div id="label">
+      <div id="label_endTime">
         <label>End Time</label>
       </div>
       <div class="subject">
-        <md-field>
           <Datetimepicker class="wide" v-model="endTime"></Datetimepicker>
-        </md-field>
       </div>
       <div class="subject">
         <md-field>
@@ -138,12 +134,16 @@ export default {
   width: 40%;
   margin-left: 400px;
 }
-#label {
+#label_startTime {
+  margin-left: -530px;
+}
+#label_endTime {
   margin-left: -530px;
 }
 .wide {
-  width: 100%;
-
+  width: 50%;
+  border-radius: 8px;
+  color: black
 }
 .subject {
   margin-bottom: 50px;

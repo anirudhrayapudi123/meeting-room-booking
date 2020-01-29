@@ -66,7 +66,7 @@ export default {
   }),
   methods: {
     next: function() {
-      let date =
+      let startDate =
         this.selectedDate.getFullYear() +
         "-" +
         this.selectedDate.getMonth() +
@@ -74,7 +74,7 @@ export default {
         "-" +
         ("0" + this.selectedDate.getDate()).slice(-2);
       let roomName = this.room;
-      let body = JSON.stringify({ date, roomName });
+      let body = JSON.stringify({ startDate, roomName });
       // console.log(body);
       this.$http.post("http://localhost:8888/slots", body).then(result => {
         console.log(result.body);

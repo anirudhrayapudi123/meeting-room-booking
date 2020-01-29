@@ -54,7 +54,7 @@ export default {
     }),
     methods:{
         update:function(){
-            this.$router.push('/');
+           
         },
         delet:function(){
             
